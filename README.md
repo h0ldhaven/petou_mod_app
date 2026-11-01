@@ -1,75 +1,20 @@
-# React + TypeScript + Vite
+# 🐾 Petounio Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> L'espace de gestion et de modération centralisé pour l'équipe.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Présentation
 
-## React Compiler
+**Petounio Panel** est l'application officielle dédiée à l'équipe de modération. Elle a été conçue pour centraliser le suivi, la gestion des statuts et l'administration des membres de manière fluide, sécurisée et unifiée.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Fini les tableurs partagés complexes : tout se pilote depuis une interface moderne et intuitive, pensée pour le confort de l'équipe au quotidien.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Fonctionnalités Principales
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+* **Connexion Simplifiée et Sécurisée :** Accédez à votre espace personnel instantanément grâce à votre pseudo combiné à votre matricule unique à 4 chiffres. Plus besoin de retenir des mots de passe compliqués.
+* **Gestion des Membres :** Les administrateurs disposent des outils nécessaires pour ajouter, modifier ou rechercher des membres de l'équipe en toute simplicité.
+* **Suivi de l'Activité :** Visualisez les statuts de chacun en temps réel (actif, inactif, archivé, en pause, suspendu) pour une meilleure coordination.
+* **Rôles et Niveaux d'Accès :** Une interface qui s'adapte aux responsabilités de chacun (modérateurs, administrateurs, etc.).
